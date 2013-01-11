@@ -5,6 +5,9 @@
  *
  * -param OUTPUT_PATH Output path for script data (e.g. s3n://my-output-bucket/hottest_song_of_the_decade)
  */
+ 
+-- Default Parameters
+%default OUTPUT_PATH 's3n://hawk-example-output-data/$MORTAR_EMAIL_S3_ESCAPED/hottest-songs-of-the-decade'
 
 -- User-Defined Functions (UDFs)
 REGISTER '../udfs/python/date_utils.py' USING streaming_python AS date_utils;
