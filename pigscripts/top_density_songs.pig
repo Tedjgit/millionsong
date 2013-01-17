@@ -6,6 +6,9 @@
  * -param OUTPUT_PATH Output path for script data (e.g. s3n://my-output-bucket/millionsong)
  */
 
+-- Default Parameters
+%default OUTPUT_PATH 's3n://hawk-example-output-data/$MORTAR_EMAIL_S3_ESCAPED/top-density-songs'
+
 -- User-Defined Functions (UDFs)
 REGISTER '../udfs/python/millionsong.py' USING streaming_python AS millionsong;
 
