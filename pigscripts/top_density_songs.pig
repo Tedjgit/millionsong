@@ -7,7 +7,8 @@
  */
 
 -- Default Parameters
-%default OUTPUT_PATH 's3n://hawk-example-output-data/$MORTAR_EMAIL_S3_ESCAPED/top-density-songs'
+-- %default OUTPUT_PATH 's3n://hawk-example-output-data/$MORTAR_EMAIL_S3_ESCAPED/top-density-songs'
+%default OUTPUT_PATH 's3n://tedjgit-hawk-example-data/top_density_songs'
 
 -- User-Defined Functions (UDFs)
 REGISTER '../udfs/python/millionsong.py' USING streaming_python AS millionsong;
